@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.LoginAndRegister.Login_Form"
+    android:background="#CBE1EC"
+
+    >
+
+    <RelativeLayout
+        android:id="@+id/layout_header"
+        android:background="@drawable/shape_login"
+        android:layout_width="match_parent"
+        android:layout_height="280dp">
+
+        <ImageView
+            android:id="@+id/resbtnToLogin"
+            android:layout_width="wrap_content"
+            android:background="@android:color/transparent"
+            android:layout_margin="10dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/back" />
+
+
+
+        <TextView
+            android:id="@+id/textres"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="32dp"
+            android:text="Đăng Kí Tài Khoản"
+            android:textColor="@color/black"
+            android:textSize="28dp" />
+        <ImageView
+            android:id="@+id/imgView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/textres"
+            android:src="@drawable/registeruser"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_form_register"
+        android:layout_width="match_parent"
+        android:layout_height="340dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="220dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/shape_form_login">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/layout_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            app:startIconDrawable="@drawable/ic_baseline_account_box_24"
+
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/txt_Name_Res"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hintname"
+                android:textColorHint="@color/black" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/layout_Email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/layout_name"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            app:startIconDrawable="@drawable/ic_baseline_email_24"
+
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/txt_Email_Res"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hintemail" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/layout_pass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/layout_Email"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            app:endIconMode="password_toggle"
+            app:startIconDrawable="@drawable/lock">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/txt_Pass_Res"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="@string/hintpass"
+                android:inputType="textPassword"
+
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/layout_Repass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/layout_pass"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            app:endIconMode="password_toggle"
+            app:startIconDrawable="@drawable/lock">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/txt_Pass_Res_Re"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/rehintpass"
+                android:inputType="textPassword"
+
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+    </RelativeLayout>
+
+
+
+
+    <Button
+        android:id="@+id/resbtnToMain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout_form_register"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/shapebtnlogin"
+        android:text="Đăng Kí"
+        android:layout_marginTop="24dp"
+        />
+    <TextView
+        android:id="@+id/btnToSignIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/resbtnToMain"
+        android:text="Đăng Nhập"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/red"
+        android:textStyle="bold"
+
+        android:textSize="18sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="36dp"
+        android:autoLink="email"
+        />
+
+
+
+
+
+</RelativeLayout>

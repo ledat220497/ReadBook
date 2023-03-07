@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_user"
+    app:startDestination="@id/home_fm">
+    <fragment
+        android:id="@+id/book_fm"
+        android:name="com.example.readbook.Activity.TabLayoutMain.book_fm"
+        android:label="fragment_book_fm"
+        tools:layout="@layout/fragment_book_fm" />
+    <fragment
+        android:id="@+id/home_fm"
+        android:name="com.example.readbook.Activity.TabLayoutMain.home_fm"
+        android:label="fragment_home_fm"
+        tools:layout="@layout/fragment_home_fm" />
+    <fragment
+        android:id="@+id/like"
+        android:name="com.example.readbook.Activity.TabLayoutMain.Like"
+        android:label="fragment_like"
+        tools:layout="@layout/fragment_like" />
+    <fragment
+        android:id="@+id/profile_fm"
+        android:name="com.example.readbook.Activity.TabLayoutMain.profile_fm"
+        android:label="fragment_profile_fm"
+        tools:layout="@layout/fragment_profile_fm" >
+        <action
+            android:id="@+id/action_profile_fm_to_profileEdit"
+            app:destination="@id/profileEdit" />
+    </fragment>
+    <fragment
+        android:id="@+id/store_fm"
+        android:name="com.example.readbook.Activity.TabLayoutMain.store_fm"
+        android:label="fragment_store_fm"
+        tools:layout="@layout/fragment_store_fm" />
+    <fragment
+        android:id="@+id/share"
+        android:name="com.example.readbook.Activity.TabLayoutMain.Share"
+        android:label="fragment_share"
+        tools:layout="@layout/fragment_share" />
+    <fragment
+        android:id="@+id/setting_fm"
+        android:name="com.example.readbook.Activity.TabLayoutMain.setting_fm"
+        android:label="fragment_setting_fm"
+        tools:layout="@layout/fragment_setting_fm" />
+    <fragment
+        android:id="@+id/profileEdit"
+        android:name="com.example.readbook.Activity.TabLayoutMain.ProfileEdit"
+        android:label="fragment_profile_edit"
+        tools:layout="@layout/fragment_profile_edit" >
+        <action
+            android:id="@+id/action_profileEdit_to_profile_fm"
+            app:destination="@id/profile_fm" />
+    </fragment>
+</navigation>

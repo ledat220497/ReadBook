@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/containerProfileEdit"
+    android:layout_width="match_parent"
+    android:layout_marginTop="?actionBarSize"
+    android:layout_height="match_parent"
+    tools:context=".Activity.TabLayoutMain.ProfileEdit">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@drawable/shape_login"
+        android:layout_height="260dp" >
+        <ImageButton
+            android:id="@+id/btnBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/back"
+            android:background="@android:color/transparent"
+            android:layout_margin="10dp" />
+        <TextView
+            android:id="@+id/titleEditPro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btnBack"
+            android:layout_centerHorizontal="true"
+            android:text="Cập Nhật Thông Tin"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/profileIv"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            app:shapeAppearance="@drawable/styleroundconerimage"
+            android:src="@drawable/ic_person_64"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:background="@color/white"
+            android:layout_below="@id/titleEditPro" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/form_update"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:background="@drawable/shape_form_login"
+        android:layout_marginTop="240dp"
+        >
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/nameTil"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:hintEnabled="false"
+            app:endIconMode="clear_text"
+            android:background="@drawable/shaperseach"
+            >
+
+            <EditText
+                android:id="@+id/nameEt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:drawableStart="@drawable/ic_person_24"
+                android:drawablePadding="8dp"
+                android:hint="Tên Người Dùng"
+                android:textColor="@color/black"
+                android:textColorHint="@color/gray"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btnUpdate"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:textSize="18dp"
+        android:layout_below="@id/form_update"
+        android:text="Cập Nhật"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="20dp" />
+
+
+</RelativeLayout>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardBackgroundColor="@color/white"
+    app:cardCornerRadius="5dp"
+    app:cardElevation="0dp"
+    app:contentPadding="5dp"
+    android:layout_marginBottom="5dp"
+    android:layout_height="140dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:id="@+id/pdfUrl"
+            android:layout_width="100dp"
+            android:layout_height="140dp"
+            android:layout_marginEnd="5dp"
+            android:background="@color/gray">
+            <com.github.barteksc.pdfviewer.PDFView
+                android:id="@+id/pdfView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                />
+
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/titleTv"
+            android:layout_width="match_parent"
+            style="@style/TextAppearance.MaterialComponents.Headline6"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:textColor="@color/black"
+            android:layout_toStartOf="@id/removeFavorite"
+            android:layout_toEndOf="@id/pdfUrl"
+            android:text="Tên Sách"/>
+        <ImageButton
+            android:id="@+id/removeFavorite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/ic_baseline_favorite_24"
+            android:background="@android:color/transparent"
+            app:tint="@color/black" />
+        <TextView
+            android:id="@+id/descriptionTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/TextAppearance.MaterialComponents.Body2"
+            android:layout_below="@id/titleTv"
+            android:text="Nội Dung"
+            android:textColor="@color/black"
+            android:layout_marginTop="8dp"
+            android:ellipsize="end"
+            android:layout_toEndOf="@id/pdfUrl"
+            android:maxLines="4"
+            />
+        <TextView
+            android:id="@+id/categoryTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/TextAppearance.MaterialComponents.Caption"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:maxLines="1"
+            android:textColor="@color/black"
+            android:text="Thể Loại"/>
+        <TextView
+            android:id="@+id/sizeTv"
+            android:layout_width="wrap_content"
+            android:textColor="@color/black"
+            android:layout_height="wrap_content"
+            style="@style/TextAppearance.MaterialComponents.Caption"
+            android:layout_alignParentBottom="true"
+            android:layout_toEndOf="@id/pdfUrl"
+            android:text="13MB" />
+        <TextView
+            android:id="@+id/dateTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/TextAppearance.MaterialComponents.Caption"
+            android:layout_alignParentBottom="true"
+            android:layout_toEndOf="@id/sizeTv"
+            android:textColor="@color/black"
+            android:layout_toStartOf="@id/categoryTv"
+            android:text="dd//MM/YYYY"
+            android:textAlignment="center"/>
+
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

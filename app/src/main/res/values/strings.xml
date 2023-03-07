@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">ReadBook</string>
+    <string name="title_wellcome">
+        Tất cả những gì con người làm, \n
+        nghĩ hoặc trở thành được bảo tồn \n
+        một cách kỳ diệu trên những trang sách
+    </string>
+    <string name="queryhint">Search Here...</string>
+    <string name="open">Open Navigation Drawer</string>
+    <string name="close">Open Navigation Drawer</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="hintemail">Email</string>
+    <string name="hintname">Tên Người Dùng</string>
+    <string name="hintpass">Mật Khẩu</string>
+    <string name="rehintpass">Nhập Lại Mật Khẩu</string>
+    <string name="wrongpass"> password is only 6 characters</string>
+    <string name="passdisnotconrect">password incorrect</string>
+    <string name="homestring">READ BOOK</string>
+    <string name="home_fm">Home BOOK</string>
+    <string name="listbook">LIST BOOK</string>
+    <string name="storebook">STORE BOOK</string>
+    <string name="store">STORE BOOK</string>
+
+</resources>

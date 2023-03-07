@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawerLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/shape_login"
+    tools:context=".Activity.Admin.AdminDashBoard">
+    <!--    Toolbar-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="#CBE1EC"
+        android:layout_height="match_parent" >
+    <RelativeLayout
+        android:id="@+id/header_dash"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="#CBE1EC">
+
+        <ImageButton
+            android:id="@+id/btnNavigation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/barlist" />
+
+        <TextView
+            android:id="@+id/titleDash"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:text="QUẢN LÝ SÁCH"
+            android:textSize="24sp"
+
+            />
+
+<!--        <TextView-->
+<!--            android:id="@+id/show_Email"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_below="@id/titleDash"-->
+<!--            android:layout_centerHorizontal="true"-->
+<!--            android:layout_marginTop="6dp"-->
+<!--            android:layout_marginBottom="6dp"-->
+<!--            android:textColor="@color/black"-->
+<!--            android:gravity="center"-->
+<!--            android:text="adnjw@gmail.com"-->
+<!--            android:textSize="18dp" />-->
+
+<!--        <ImageButton-->
+<!--            android:id="@+id/btnlogout"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_alignParentEnd="true"-->
+<!--            android:background="@android:color/transparent"-->
+<!--            android:layout_centerVertical="true"-->
+<!--            android:layout_marginEnd="10dp"-->
+<!--            android:src="@drawable/poweroff" />-->
+
+
+    </RelativeLayout>
+
+<!--    Categories-->
+
+<!--    search-->
+        <RelativeLayout
+            android:id="@+id/viewFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/header_dash">
+
+            <androidx.fragment.app.FragmentContainerView
+                android:id="@+id/idFragmentContainer"
+                android:name="androidx.navigation.fragment.NavHostFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:defaultNavHost="true"
+                app:navGraph="@navigation/nav_admin" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navView"
+        android:layout_width="220dp"
+        android:layout_height="match_parent"
+        app:menu="@menu/menu_admin"
+        app:headerLayout="@layout/header_nav_admin"
+        android:layout_gravity="start"
+        />
+</androidx.drawerlayout.widget.DrawerLayout>

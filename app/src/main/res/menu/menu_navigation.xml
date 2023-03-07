@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+    <item android:id="@+id/home" android:title="Trang Chủ" android:icon="@drawable/ic_baseline_home_24" />
+    <item android:id="@+id/book" android:title="Sách Đã Tải" android:icon="@drawable/ic_baseline_menu_book_24"/>
+    <item android:id="@+id/storebook" android:title="Sách" android:icon="@drawable/storebook"/>
+    <item android:id="@+id/profile" android:title="Cá Nhân" android:icon="@drawable/ic_baseline_account_box_24"/>
+    <item android:title="Share Like">
+        <menu>
+           <item android:id="@+id/share" android:title="Đã Chia Sẻ" android:icon="@drawable/ic_baseline_share_24" />
+            <item android:id="@+id/like" android:title="Đã Đọc" android:icon="@drawable/ic_baseline_favorite_24"/>
+"
+        </menu>
+    </item>
+    <item android:title="Orther">
+        <menu>
+            <item android:id="@+id/logout" android:title="Đăng Xuất" android:icon="@drawable/ic_baseline_logout_24" />
+            <item android:id="@+id/setting" android:title="Cài Đặt" android:icon="@drawable/ic_baseline_settings_24"/>
+        </menu>
+    </item>
+
+    </group>
+</menu>

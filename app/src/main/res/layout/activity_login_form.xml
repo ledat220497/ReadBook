@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.LoginAndRegister.Login_Form"
+    android:background="#CBE1EC"
+    >
+    <RelativeLayout
+        android:background="@drawable/shape_login"
+        android:id="@+id/layout_header"
+        android:layout_width="match_parent"
+        android:layout_height="240dp" >
+        <ImageView
+            android:id="@+id/btnToLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:src="@drawable/back" />
+        <TextView
+            android:id="@+id/tvSubTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="28dp"
+            android:layout_centerHorizontal="true"
+            android:paddingStart="40dp"
+            android:textStyle="bold"
+            android:textColor="@color/black" />
+        <TextView
+            android:id="@+id/textsignin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvSubTitle"
+            android:layout_centerHorizontal="true"
+            android:text="Đăng Nhập"
+            android:textSize="28dp"
+            android:layout_marginTop="12dp"
+            android:textColor="@color/red" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/editlogin"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/shape_form_login"
+        android:orientation="vertical"
+
+        >
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/layout_Email"
+            android:layout_width="match_parent"
+            android:layout_margin="20dp"
+            android:layout_height="wrap_content"
+            app:endIconMode="clear_text"
+            app:startIconDrawable="@drawable/ic_baseline_account_box_24"
+
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/txt_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hintemail" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/layout_Email"
+            android:layout_margin="20dp"
+            app:endIconMode="password_toggle"
+            app:startIconDrawable="@drawable/lock">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/txt_pass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hintpass"
+                android:inputType="textPassword"
+                android:longClickable="false"
+
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+    </RelativeLayout>
+    <androidx.appcompat.widget.AppCompatCheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ghi Nhớ"
+        android:textColor="@color/black"
+        android:layout_below="@id/editlogin"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="8dp"
+        />
+    <TextView
+        android:id="@+id/btnForgot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/editlogin"
+        android:text="Quên Mật khẩu ?"
+        android:layout_marginRight="10dp"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_marginTop="24dp" />
+    <Button
+        android:id="@+id/btnToMain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_below="@id/btnForgot"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/shapebtnlogin"
+        android:text="Đăng Nhập"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        />
+    <TextView
+        android:id="@+id/titleRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnToMain"
+        android:text="Bạn đã có tài khoản chưa ?"
+        android:layout_marginTop="12dp"
+        android:textColor="@color/purple_500"
+        android:textSize="18sp"
+        android:layout_marginStart="50dp"
+        />
+    <TextView
+
+        android:id="@+id/btnToRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnToMain"
+        android:text="Đăng Kí"
+        android:textColor="@color/red"
+        android:textStyle="bold"
+        android:layout_toEndOf="@id/titleRegister"
+        android:textSize="18sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"
+        android:layout_marginRight="36dp"
+        android:autoLink="email"
+        />
+</RelativeLayout>

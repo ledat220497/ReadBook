@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_admin"
+    app:startDestination="@id/managerBook">
+
+    <fragment
+        android:id="@+id/managerBook"
+        android:name="com.example.readbook.Activity.Admin.FragmentAdmin.ManagerBook"
+        android:label="ManagerBook" >
+        <action
+            android:id="@+id/action_managerBook_to_addCategory"
+            app:destination="@id/addCategory" />
+        <action
+            android:id="@+id/action_managerBook_to_addPdf"
+            app:destination="@id/addPdf" />
+    </fragment>
+    <fragment
+        android:id="@+id/managerUser"
+        android:name="com.example.readbook.Activity.Admin.FragmentAdmin.ManagerUser"
+        android:label="ManagerUser" />
+    <fragment
+        android:id="@+id/settingAdmin"
+        android:name="com.example.readbook.Activity.Admin.FragmentAdmin.SettingAdmin"
+        android:label="SettingAdmin" />
+    <fragment
+        android:id="@+id/addPdf"
+        android:name="com.example.readbook.Activity.Admin.AddPdf"
+        android:label="AddPdf" >
+        <action
+            android:id="@+id/action_addPdf_to_managerBook"
+            app:destination="@id/managerBook" />
+    </fragment>
+    <fragment
+        android:id="@+id/addCategory"
+        android:name="com.example.readbook.Activity.Admin.AddCategory"
+        android:label="activity_add_category"
+        tools:layout="@layout/activity_add_category" >
+        <action
+            android:id="@+id/action_addCategory_to_managerBook"
+            app:destination="@id/managerBook" />
+    </fragment>
+</navigation>

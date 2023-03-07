@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#CBE1EC"
+    tools:context=".Activity.LoginAndRegister.Login">
+
+    <TextView
+        android:id="@+id/textbook"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="ĐỌC SÁCH"
+        android:textAlignment="center"
+        android:textSize="36dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:textColor="@color/red"
+        />
+    <TextView
+        android:id="@+id/textSystem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-condensed-light"
+        android:layout_below="@id/textbook"
+        android:text="ĐĂNG NHẬP \n HỆ THỐNG"
+        android:textAlignment="center"
+        android:textSize="28dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:textColor="@color/purple_500"
+        />
+    <ImageView
+        android:id="@+id/imageLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/anhlogo"
+
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        />
+<!--    <androidx.appcompat.widget.SearchView-->
+<!--        android:id="@+id/textSeach"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="70dp"-->
+<!--        android:layout_marginStart="20dp"-->
+<!--        android:layout_marginEnd="20dp"-->
+<!--        app:queryHint="@string/queryhint"-->
+<!--        android:background="@drawable/shaperseach"-->
+<!--        android:layout_below="@id/textbook"-->
+<!--        />-->
+
+
+
+<!--    <androidx.recyclerview.widget.RecyclerView-->
+<!--        android:id="@+id/bookRcv"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:layout_below="@id/textbook"-->
+<!--        android:layout_above="@id/linearbottom"-->
+<!--        android:layout_marginTop="10dp" />-->
+    <RelativeLayout
+        android:id="@+id/linearbottom"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageLogo"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:layout_marginTop="40dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="40dp"
+        >
+        <TextView
+            android:id="@+id/txtsignin"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:gravity="center"
+            android:background="@color/purple_500"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/black"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:textStyle="bold"
+            android:text="Đăng Nhập" />
+
+        <TextView
+            android:id="@+id/txtcreateacc"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:layout_below="@id/txtsignin"
+            android:textAlignment="center"
+            android:layout_marginTop="10dp"
+            android:background="@color/purple_500"
+            android:layout_marginRight="20dp"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:layout_marginLeft="20dp"
+            android:textStyle="bold"
+            android:text="Đăng Kí" />
+
+    </RelativeLayout>
+</RelativeLayout>

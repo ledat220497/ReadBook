@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_loginform"
+    app:startDestination="@id/login_Form">
+
+    <activity
+        android:id="@+id/login_Form"
+        android:name="com.example.readbook.Activity.LoginAndRegister.Login_Form"
+        android:label="activity_register_form"
+        tools:layout="@layout/activity_register_form" />
+</navigation>
